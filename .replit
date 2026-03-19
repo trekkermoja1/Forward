@@ -4,3 +4,8 @@ expertMode = true
 
 [nix]
 channel = "stable-25_05"
+packages = ["wget", "nano", "netcat-gnu"]
+
+[[ports]]
+localPort = 5555
+externalPort = 80

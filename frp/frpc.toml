@@ -1,0 +1,9 @@
+serverAddr = "sjc1.clusters.zeabur.com"
+serverPort = 22524
+
+[[proxies]]
+name = "myapp"
+type = "tcp"
+localIP = "127.0.0.1"
+localPort = 5555
+remotePort = 6000
