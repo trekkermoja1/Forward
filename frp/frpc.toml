@@ -1,8 +1,11 @@
-serverAddr = "sjc1.clusters.zeabur.com"
+serverAddr = "43.153.104.236"
 serverPort = 22524
 
+auth.method = "token"
+auth.token = "{{ .Envs.FRP_TOKEN }}"
+
 [[proxies]]
-name = "myapp"
+name = "myapp-tcp"
 type = "tcp"
 localIP = "127.0.0.1"
 localPort = 5555
